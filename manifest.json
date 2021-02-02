@@ -1,0 +1,24 @@
+{
+ "manifest_version": 2,
+ "name": "Bol Auto-Buyer",
+ "version": "1.0.0",
+ "description": "Buy automatically products on coolblue",
+ "short_name": "Short Sample Name",
+ "permissions": ["activeTab", "declarativeContent", "storage", "<all_urls>"],
+ "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "js": ["main.js"]
+   }
+ ],
+ "browser_action": {
+   "default_icon": {
+     "16": "bol.png",
+     "32": "bol.png",
+     "48": "bol.png",
+     "128": "bol.png"
+   },
+     "default_popup" : "popup.html",
+     "default_title" : "start"
+ }
+}
